@@ -55,7 +55,7 @@ TARGET_LD_SHIM_LIBS := /system/vendor/bin/glgps_nvidiaTegra2android|libsensor.so
 TARGET_KERNEL_SOURCE    := kernel/nvidia/shield
 TARGET_KERNEL_CONFIG    := lineageos_shieldtablet_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage
-BOARD_KERNEL_CMDLINE    := vmalloc=300M
+BOARD_KERNEL_CMDLINE    := vmalloc=300M zcache.enabled=1
 
 # Light
 include hardware/nvidia/light/BoardLight.mk
