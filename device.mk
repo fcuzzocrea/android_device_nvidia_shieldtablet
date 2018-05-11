@@ -111,6 +111,17 @@ PRODUCT_PACKAGES += \
     nvaudio_fx.xml
 endif
 
+# aptXHD
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/aptXHD/libaptX_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptX_encoder.so \
+    $(LOCAL_PATH)/aptXHD/libaptXHD_encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaptXHD_encoder.so
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bt.enableAptXHD=true \
+    persist.service.btui.use_aptx=1 \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac \
+    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+
 # Camera
 ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
 PRODUCT_PACKAGES += \
