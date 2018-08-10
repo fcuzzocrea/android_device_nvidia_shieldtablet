@@ -40,8 +40,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 TARGET_SCREEN_HEIGHT     := 1920
 TARGET_SCREEN_WIDTH      := 1200
 
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
 $(call inherit-product, vendor/nvidia/shieldtablet/shieldtablet-vendor.mk)
 
 PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
