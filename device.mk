@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_TEGRA_BT       ?= bcm
+
 $(call inherit-product, device/nvidia/t124-common/t124.mk)
 $(call inherit-product, device/nvidia/icera/icera.mk)
 $(call inherit-product, device/nvidia/touch/raydium.mk)
