@@ -23,3 +23,18 @@ TARGET_SCREEN_HEIGHT     := 1920
 TARGET_SCREEN_WIDTH      := 1200
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
+PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
+    ro.product.vendor.device \
+    ro.product.vendor.model \
+    ro.product.vendor.name \
+    ro.vendor.build.fingerprint
+
+# Init related
+PRODUCT_PACKAGES += \
+    init_tegra \
+    fstab.tn8 \
+    init.recovery.tn8.rc \
+    init.tn8.rc \
+    init.tn8_common.rc \
+    power.tn8.rc
