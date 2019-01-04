@@ -15,6 +15,7 @@
 #
 
 TARGET_TEGRA_BT       ?= bcm
+TARGET_TEGRA_WIFI     ?= bcm
 
 $(call inherit-product, device/nvidia/t124-common/t124.mk)
 $(call inherit-product, device/nvidia/icera/icera.mk)
