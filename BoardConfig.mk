@@ -70,3 +70,4 @@ WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 include device/nvidia/t124-common/BoardConfigCommon.mk
 include device/nvidia/icera/BoardConfigIcera.mk
 include device/nvidia/touch/BoardConfigTouch.mk
+include vendor/nvidia/shieldtablet/BoardConfigVendor.mk
