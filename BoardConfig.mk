@@ -47,6 +47,11 @@ BOARD_KERNEL_CMDLINE    := vmalloc=300M
 # Recovery
 TARGET_RECOVERY_FSTAB := device/nvidia/shieldtablet/initfiles/fstab.tn8
 
+# TWRP Support
+ifeq ($(WITH_TWRP),true)
+include device/nvidia/shieldtablet/twrp/twrp.mk
+endif
+
 # Vendor Init
 TARGET_INIT_VENDOR_LIB := libinit_tn8
 
