@@ -18,6 +18,7 @@ TARGET_TEGRA_AUDIO    ?= nvaudio
 TARGET_TEGRA_BT       ?= bcm
 TARGET_TEGRA_CAMERA   ?= nvcamera-t124
 TARGET_TEGRA_GPS      ?= brcm
+TARGET_TEGRA_OMX      ?= nvmm-t124
 TARGET_TEGRA_SENSORS  ?= fusion520
 TARGET_TEGRA_WIFI     ?= bcm
 
@@ -107,6 +108,15 @@ PRODUCT_PACKAGES += \
     init.gps.rc \
     gps.conf \
     gpsconfig.xml
+
+# Media config
+PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
+PRODUCT_PACKAGES += \
+    media_codecs.xml \
+    media_codecs_performance.xml \
+    media_profiles_V1_0.xml
 
 # NVIDIA specific permissions
 PRODUCT_COPY_FILES += \
