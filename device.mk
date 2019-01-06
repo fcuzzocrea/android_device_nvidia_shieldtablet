@@ -44,6 +44,10 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.product.vendor.name \
     ro.vendor.build.fingerprint
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    device/nvidia/shieldtablet/overlay
+
 # Init related
 PRODUCT_PACKAGES += \
     init_tegra \
