@@ -34,15 +34,19 @@ PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
 PRODUCT_PACKAGES += \
     init_tegra \
     fstab.ardbeg \
+    fstab.jetson-tk1 \
     fstab.loki \
     fstab.tn8 \
     init.recovery.ardbeg.rc \
+    init.recovery.jetson-tk1.rc \
     init.recovery.loki.rc \
     init.recovery.tn8.rc \
     init.ardbeg.rc \
+    init.jetson-tk1.rc \
     init.loki.rc \
     init.tn8.rc \
     init.tn8_common.rc \
     power.ardbeg.rc \
+    power.jetson-tk1.rc \
     power.loki.rc \
     power.tn8.rc
