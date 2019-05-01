@@ -18,6 +18,7 @@ TARGET_TEGRA_AUDIO   ?= nvaudio
 TARGET_TEGRA_CAMERA  ?= nvcamera-t124
 TARGET_TEGRA_GPS     ?= brcm
 TARGET_TEGRA_OMX     ?= nvmm-t124
+TARGET_TEGRA_POWER   ?= lineage
 TARGET_TEGRA_SENSORS ?= fusion520
 
 $(call inherit-product, device/nvidia/t124-common/t124.mk)
