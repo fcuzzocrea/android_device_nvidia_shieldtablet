@@ -19,6 +19,7 @@ TARGET_TEGRA_BT       ?= bcm
 TARGET_TEGRA_CAMERA   ?= nvcamera-t124
 TARGET_TEGRA_GPS      ?= brcm
 TARGET_TEGRA_OMX      ?= nvmm-t124
+TARGET_TEGRA_POWER    ?= lineage
 TARGET_TEGRA_SENSORS  ?= fusion520
 TARGET_TEGRA_WIFI     ?= bcm
 
