@@ -53,6 +53,9 @@ TARGET_KERNEL_CONFIG    := lineageos_shieldtablet_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_KERNEL_CMDLINE    := vmalloc=300M
 
+# Light
+include hardware/nvidia/light/BoardLight.mk
+
 # Manifest
 DEVICE_MANIFEST_FILE := device/nvidia/shieldtablet/manifest.xml
 
