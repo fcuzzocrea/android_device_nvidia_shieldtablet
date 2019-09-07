@@ -21,3 +21,14 @@ import /vendor/etc/init/hw/init.ray_touch.rc
 on fs
     mount_all /vendor/etc/fstab.yellowstone
     swapon_all /vendor/etc/fstab.yellowstone
+
+# Product specific props
+on init
+    setprop ro.vendor.nv.usb.vid 18D1
+    setprop ro.vendor.nv.usb.pid.mtp 4D01
+    setprop ro.vendor.nv.usb.pid.mtp.adb 4D02
+    setprop ro.vendor.nv.usb.pid.ptp 4D05
+    setprop ro.vendor.nv.usb.pid.ptp.adb 4D06
+    setprop ro.vendor.nv.usb.pid.rndis 4D03
+    setprop ro.vendor.nv.usb.pid.rndis.acm.adb 4D04
+    setprop ro.vendor.nv.usb.pid.rndis.adb 4D04
