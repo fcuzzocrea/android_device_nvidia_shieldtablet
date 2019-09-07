@@ -29,3 +29,14 @@ on fs
 
     mount_all /vendor/etc/fstab.jetson-tk1
     swapon_all /vendor/etc/fstab.jetson-tk1
+
+# Product specific props
+on init
+    setprop ro.vendor.nv.usb.vid 0955
+    setprop ro.vendor.nv.usb.pid.mtp 7102
+    setprop ro.vendor.nv.usb.pid.mtp.adb 7100
+    setprop ro.vendor.nv.usb.pid.ptp 7102
+    setprop ro.vendor.nv.usb.pid.ptp.adb 7100
+    setprop ro.vendor.nv.usb.pid.rndis 7103
+    setprop ro.vendor.nv.usb.pid.rndis.acm.adb 7103
+    setprop ro.vendor.nv.usb.pid.rndis.adb 7103
