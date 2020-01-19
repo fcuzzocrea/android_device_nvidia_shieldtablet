@@ -21,6 +21,10 @@ on post-fs-data
     chmod 0664 /sys/class/gpio/gpio61/value
     chmod 0644 /sys/kernel/cluster/active
     start start-gps
+    chown system system /sys/devices/platform/host1x/tegradc.0/color_filter
+    chown system system /sys/devices/platform/host1x/tegradc.0/color_filter_rgb
+    chmod 0644 /sys/devices/platform/host1x/tegradc.0/color_filter
+    chmod 0644 /sys/devices/platform/host1x/tegradc.0/color_filter_rgb
 
 on init
     setprop sys.esrd.powermon_path /sys/bus/i2c/devices/1-0040/iio_device
