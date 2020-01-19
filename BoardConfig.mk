@@ -44,9 +44,6 @@ BUILD_FINGERPRINT := nvidia/wx_un_do/shieldtablet:7.0/NRD90M/1928188_1038.3875:u
 # Forced shims
 TARGET_LD_SHIM_LIBS := /system/vendor/bin/glgps_nvidiaTegra2android|libsensor.so
 
-# Hardware overlays
-JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|device/nvidia/shieldtablet/lineagehw|**/*.java
-
 # Kernel
 TARGET_KERNEL_SOURCE    := kernel/nvidia/shield
 TARGET_KERNEL_CONFIG    := lineageos_shieldtablet_defconfig
