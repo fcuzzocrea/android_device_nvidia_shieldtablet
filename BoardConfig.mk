@@ -35,6 +35,9 @@ BCM_BLUETOOTH_MANTA_BUG := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/nvidia/shieldtablet/comms
 endif
 
+# Bionic
+MALLOC_SVELTE := true
+
 # Bootloader versions
 TARGET_BOARD_INFO_FILE := device/nvidia/shieldtablet/board-info.txt
 
