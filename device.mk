@@ -120,7 +120,8 @@ PRODUCT_PACKAGES += \
 # Camera
 ifeq ($(TARGET_TEGRA_CAMERA),nvcamera-t124)
 PRODUCT_PACKAGES += \
-    nvcamera.conf
+    nvcamera.conf \
+    Snap
 endif
 
 # Charger
