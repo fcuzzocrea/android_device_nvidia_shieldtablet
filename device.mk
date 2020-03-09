@@ -165,6 +165,10 @@ PRODUCT_PACKAGES += \
     nvphsd.conf
 endif
 
+# Sensors
+PRODUCT_PACKAGES += \
+    freeMotionD.config
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service-nvidia \
