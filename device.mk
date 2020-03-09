@@ -174,6 +174,10 @@ PRODUCT_PACKAGES += \
     nvphsd.conf
 endif
 
+# Raydium
+PRODUCT_PACKAGES += \
+    calib_cfg.xml
+
 # Sensors
 PRODUCT_PACKAGES += \
     freeMotionD.config
