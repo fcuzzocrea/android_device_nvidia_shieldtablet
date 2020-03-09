@@ -151,6 +151,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service-nvidia
 
+# Nvcms
+PRODUCT_PACKAGES += \
+    device.cfg
+
 # NVIDIA specific permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/com.nvidia.feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nvidia.feature.xml
