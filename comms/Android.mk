@@ -30,6 +30,13 @@ LOCAL_SRC_FILES            := enctune.conf
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE               := freeMotionD.config
+LOCAL_MODULE_TAGS          := optional
+LOCAL_MODULE_CLASS         := ETC
+LOCAL_SRC_FILES            := freeMotionD.config
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE               := gps.conf
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_CLASS         := ETC
