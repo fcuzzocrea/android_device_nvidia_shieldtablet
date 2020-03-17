@@ -48,6 +48,10 @@ on init
     chown system system /sys/bus/i2c/devices/1-0040/iio_device/running_mode
     write /proc/sys/vm/page-cluster 0
 
+
+    # Use Keymaster 0 HAL
+    setprop ro.hardware.keystore v0.tegra
+
 on fs
     mount_all /vendor/etc/fstab.tn8
     swapon_all /vendor/etc/fstab.tn8
