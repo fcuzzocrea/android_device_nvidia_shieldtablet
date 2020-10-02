@@ -156,6 +156,9 @@ PRODUCT_PACKAGES += \
     nvphsd.conf
 endif
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += device/nvidia/shieldtablet
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-service-nvidia \

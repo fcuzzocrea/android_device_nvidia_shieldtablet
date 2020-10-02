@@ -12,10 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+DEVICE_PATH := device/nvidia/shieldtablet
+
 TARGET_TEGRA_POWER ?= lineage
 
 # Unified device support
-TARGET_INIT_VENDOR_LIB := libinit_tn8
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_tn8
 PRODUCT_VENDOR_PROPERTY_BLACKLIST := \
     ro.product.vendor.device \
     ro.product.vendor.model \
